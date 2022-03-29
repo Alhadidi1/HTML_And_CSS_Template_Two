@@ -96,7 +96,7 @@ ul {
   margin: 0 auto 100px;
   max-width: 100%;
   line-height: 2;
-  color: var(--light-color);
+  color: var(--light-color, #777);
 }
 /* end components */
 /* start variables */
@@ -190,8 +190,8 @@ header nav ul li a {
 }
 header nav ul li a.active,
 header nav ul li a:hover {
-  color: var(--main-color);
-  border-bottom: 1px solid var(--main-color);
+  color: var(--main-color, #2196f3);
+  border-bottom: 1px solid var(--main-color, #2196f3);
 }
 header nav .form {
   width: 40px;
@@ -240,7 +240,7 @@ header nav .form i {
   transform: translateY(-50%);
   width: 50%;
   padding: 50px;
-  background-color: var(--transparent-color);
+  background-color: var(--transparent-color, #00bcd4);
   color: white;
   display: flex;
   justify-content: flex-end;
@@ -326,14 +326,14 @@ header nav .form i {
   margin-right: 10px;
 }
 .landing .overlay .bullets li.active {
-  background-color: var(--main-color);
-  border-color: var(--main-color);
+  background-color: var(--main-color, #2196f3);
+  border-color: var(--main-color, #2196f3);
 }
 /* end landing */
 /* start services */
 .services {
-  padding-top: var(--section-padding);
-  padding-bottom: var(--section-padding);
+  padding-top: var(--section-padding, 100px);
+  padding-bottom: var(--section-padding, 100px);
 }
 @media (min-width: 768px) {
   .services .services-container {
@@ -362,17 +362,17 @@ header nav .form i {
 }
 .services .services-container .srv-box h3 {
   margin-bottom: 30px;
-  color: var(--main-color);
+  color: var(--main-color, #2196f3);
 }
 .services .services-container .srv-box p {
   line-height: 2;
-  color: var(--light-color);
+  color: var(--light-color, #2196f3);
 }
 /* end services */
 /* start design section */
 .design {
-  padding-top: var(--section-padding);
-  padding-bottom: var(--section-padding);
+  padding-top: var(--section-padding, 100px);
+  padding-bottom: var(--section-padding, 100px);
   height: 600px;
   position: relative;
   background-image: url(../images/design-features.jpg);
@@ -411,7 +411,7 @@ header nav .form i {
 .design .text {
   color: #fff;
   padding: 50px;
-  background-color: var(--transparent-color)
+  background-color: var(--transparent-color, #00bcd4)
 }
 @media (max-width: 767px) {
   .design .text {
@@ -442,8 +442,8 @@ header nav .form i {
 /* end design section */
 /* start portfolio */
 .portfolio {
-  padding-top: var(--section-padding);
-  padding-bottom: var(--section-padding);
+  padding-top: var(--section-padding, 100px);
+  padding-bottom: var(--section-padding, 100px);
 }
 .portfolio .shuffle {
   display: flex;
@@ -453,7 +453,7 @@ header nav .form i {
   padding: 10px;
 }
 .portfolio .shuffle li.active {
-  background-color: var(--main-color);
+  background-color: var(--main-color, #2196f3);
   color: white;
 }
 .portfolio .imgs-container {
@@ -483,7 +483,7 @@ header nav .form i {
 }
 .portfolio .imgs-container .box img {
   max-width: 100%;
-  transition: var(--transition-section);
+  transition: var(--transition-section, .3s);
 }
 .portfolio .imgs-container .box .caption {
   position: absolute;
@@ -491,7 +491,7 @@ header nav .form i {
   padding: 20px;
   background-color: #fff;
   width: 100%;
-  transition: var(--transition-section);
+  transition: var(--transition-section, .3s);
   bottom: -100%;
 }
 .portfolio .imgs-container .box .caption h4 {
@@ -499,10 +499,10 @@ header nav .form i {
   margin-bottom: 10px;
 }
 .portfolio .imgs-container .box .caption p {
-  color: var(--main-color)
+  color: var(--main-color, #2196f3)
 }
 .portfolio .more {
-  background-color: var(--main-color);
+  background-color: var(--main-color, #2196f3);
   color: #fff;
   padding: 15px 20px;
   display: block;
@@ -513,7 +513,7 @@ header nav .form i {
   transition: .5s;
 }
 .portfolio .more:hover {
-  background-color: var(--transparent-color);
+  background-color: var(--transparent-color, #00bcd4);
 }
 /* end portfolio */
 /* start video */
@@ -534,7 +534,7 @@ header nav .form i {
 }
 .video .text {
   position: absolute;
-  background-color: var(--transparent-color);
+  background-color: var(--transparent-color, #00bcd4);
   top: 50%;
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
@@ -569,7 +569,7 @@ header nav .form i {
 /* end video */
 /* start about */
 .about {
-  padding-top: var(--section-padding);
+  padding-top: var(--section-padding, 100px);
   overflow: hidden;
   text-align: center;
 }
@@ -588,8 +588,8 @@ header nav .form i {
 /* end about */
 /* start statistics */
 .stats {
-  padding-top: var(--section-padding);
-  padding-bottom: var(--section-padding);
+  padding-top: var(--section-padding, 100px);
+  padding-bottom: var(--section-padding, 100px);
   text-align: center;
   background-image: url(../images/stats.png);
   position: relative;
@@ -610,7 +610,7 @@ header nav .form i {
   position: relative;
 }
 .stats .container .box {
-  background-color: var(--transparent-color);
+  background-color: var(--transparent-color, #00bcd4);
   padding: 50px;
   color: white;
   position: relative;
@@ -664,8 +664,8 @@ header nav .form i {
 /* end statistics */
 /* start skills */
 .our-skills {
-  padding-top: var(--section-padding);
-  padding-bottom: var(--section-padding);
+  padding-top: var(--section-padding, 100px);
+  padding-bottom: var(--section-padding, 100px);
 }
 .our-skills .container {
   display: flex;
@@ -684,7 +684,7 @@ header nav .form i {
   text-transform: uppercase;
 }
 .our-skills .container > div > p {
-  color: var(--light-color);
+  color: var(--light-color, #777);
   line-height: 2;
   text-align: center;
   margin-bottom: 60px;
@@ -714,7 +714,7 @@ header nav .form i {
   border-bottom: 1px solid #ccc;
 }
 .our-skills .testimonials .content .text p {
-  color: var(--light-color);
+  color: var(--light-color, #777);
   text-align: right;
   font-size: 14px;
   margin-bottom: 10px;
@@ -733,8 +733,8 @@ header nav .form i {
   margin-right: 10px;
 }
 .our-skills .testimonials .bullets li.active {
-  background-color: var(--main-color);
-  border-color: var(--main-color);
+  background-color: var(--main-color, #2196f3);
+  border-color: var(--main-color, #2196f3);
 }
 .our-skills .skills .prog-holder {
   margin-bottom: 40px;
@@ -750,7 +750,7 @@ header nav .form i {
 }
 .our-skills .skills .prog-holder .prog span {
   display: block;
-  background-color: var(--main-color);
+  background-color: var(--main-color, #2196f3);
   height: 100%;
   position: relative;
 }
@@ -777,8 +777,8 @@ header nav .form i {
 /* end skills */
 /* start quote */
 .quote {
-  padding-top: var(--section-padding);
-  padding-bottom: var(--section-padding);
+  padding-top: var(--section-padding, 100px);
+  padding-bottom: var(--section-padding, 100px);
   background-image: url(../images/quote.jpg);
   position: relative;
   background-size: cover;
@@ -811,8 +811,8 @@ header nav .form i {
 /* end quote */
 /* start pricing section */
 .pricing {
-  padding-top: var(--section-padding);
-  padding-bottom: var(--section-padding);
+  padding-top: var(--section-padding, 100px);
+  padding-bottom: var(--section-padding, 100px);
 }
 .pricing .plans {
   display: grid;
@@ -825,8 +825,8 @@ header nav .form i {
 }
 .pricing .plans .plan .head {
   padding: 40px 20px;
-  border-top: 1px solid var(--main-color);
-  border-bottom: 1px solid var(--main-color);
+  border-top: 1px solid var(--main-color, #2196f3);
+  border-bottom: 1px solid var(--main-color, #2196f3);
 }
 .pricing .plans .plan .head h3 {
   font-weight: normal;
@@ -852,7 +852,7 @@ header nav .form i {
   right: -15px;
 }
 .pricing .plans .plan ul {
-  border-bottom: 1px solid var(--main-color);
+  border-bottom: 1px solid var(--main-color, #2196f3);
 }
 .pricing .plans .plan ul li {
   padding: 20px;
@@ -862,7 +862,7 @@ header nav .form i {
   content: "";
   width: 140px;
   height: 1px;
-  background-color: var(--main-color);
+  background-color: var(--main-color, #2196f3);
   position: absolute;
   bottom: 0;
   -webkit-transform: translatex(-50%);
@@ -876,7 +876,7 @@ header nav .form i {
   display: block;
   padding: 10px 20px;
   text-decoration: none;
-  border: 1px solid var(--main-color);
+  border: 1px solid var(--main-color, #2196f3);
   width: fit-content;
   margin: 30px auto;
 }
@@ -889,20 +889,20 @@ header nav .form i {
   display: block;
   padding: 15px 30px;
   text-decoration: none;
-  background-color: var(--main-color);
+  background-color: var(--main-color, #2196f3);
   width: fit-content;
   margin: 20px auto;
   color: #fff;
   transition: .5s;
 }
 .pricing .contact-link:hover {
-  background-color: var(--transparent-color);
+  background-color: var(--transparent-color, #00bcd4);
 }
 /* end pricing section */
 /* start subscribe */
 .subscribe {
-  padding-top: var(--section-padding);
-  padding-bottom: var(--section-padding);
+  padding-top: var(--section-padding, 100px);
+  padding-bottom: var(--section-padding, 100px);
   background-image: url(../images/subscribe.jpg);
   background-size: cover;
   position: relative;
@@ -948,13 +948,13 @@ header nav .form i {
   border: 1px solid #fff;
   border-right: none;
   padding: 20px 20px 20px 60px;
-  caret-color: var(--main-color);
+  caret-color: var(--main-color, #2196f3);
   width: calc(100% - 130px);
   color: white;
 }
 .subscribe .container form input[type="submit"] {
   width: 130px;
-  background-color: var(--main-color);
+  background-color: var(--main-color, #2196f3);
   color: #fff;
   padding: 10px 20px;
   border: 1px solid white;
@@ -985,8 +985,8 @@ header nav .form i {
 /* end subscribe */
 /* start contact */
 .contact {
-  padding-top: var(--section-padding);
-  padding-bottom: var(--section-padding);
+  padding-top: var(--section-padding, 100px);
+  padding-bottom: var(--section-padding, 100px);
 }
 .contact .container .content {
   display: flex;
@@ -1018,7 +1018,7 @@ header nav .form i {
   height: 200px;
 }
 .contact .container .content form input[type="submit"] {
-  background-color: var(--main-color);
+  background-color: var(--main-color, #2196f3);
   color: #fff;
   padding: 20px;
   border: none;
@@ -1048,7 +1048,7 @@ header nav .form i {
 }
 .contact .container .content .info .phone {
   display: block;
-  color: var(--light-color);
+  color: var(--light-color, #777);
   margin-bottom: 10px;
 }
 .contact .container .content .info h4:nth-of-type(2) {
@@ -1060,7 +1060,7 @@ header nav .form i {
   }
 }
 .contact .container .content .info address {
-  color: var(--light-color);
+  color: var(--light-color, #777);
   line-height: 2;
 }
 @media (max-width: 767px) {
@@ -1071,8 +1071,8 @@ header nav .form i {
 /* end contact */
 /* start footer */
 .footer {
-  padding-top: calc(var(--section-padding) / 2);
-  padding-bottom: calc(var(--section-padding) / 2);
+  padding-top: calc(var(--section-padding, 100px) / 2);
+  padding-bottom: calc(var(--section-padding, 100px) / 2);
   background-image: url(../images/subscribe.jpg);
   background-size: cover;
   position: relative;
@@ -1110,6 +1110,6 @@ header nav .form i {
 }
 .footer .container p.copyright span {
   font-weight: bold;
-  color: var(--main-color);
+  color: var(--main-color, #2196f3);
 }
 /* end footer */
